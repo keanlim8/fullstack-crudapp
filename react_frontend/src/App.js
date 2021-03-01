@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import {BrowserRouter as Router, Route, Switch}from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import ListGuest from './components/ListGuest'
 import Header from './components/Header'
