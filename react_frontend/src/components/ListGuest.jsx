@@ -3,7 +3,7 @@ import GuestService from '../services/GuestService';
 
 class ListGuest extends Component {
     state = {
-        guest: []
+        guests: []
     }
 
     componentDidMount() {
@@ -17,7 +17,7 @@ class ListGuest extends Component {
             <div>
                 <h2 className="text-center">Guest List</h2>
                 <div className="row">
-                    <table className="table table-striped table-border">
+                    <table className="table table-dark table-bordered table-hover">
                         <thead>
                             <tr>
                                 <th> Guest's First Name </th>
@@ -29,7 +29,7 @@ class ListGuest extends Component {
 
                         <tbody>
                             {
-                                this.state.guest.map(
+                                this.state.guests.map(
                                     guest =>
                                     <tr key = {guest.id}>
                                         <td> {guest.firstName} </td>
