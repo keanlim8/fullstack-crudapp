@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+import GuestService from '../services/GuestService';
 
 class ListGuest extends Component {
     state = {
         guest: []
+    }
+
+    componentDidMount() {
+        GuestService.getGuests().then((res) => {
+            this.setState({ guests: res.data})
+        })
     }
 
     render() {
